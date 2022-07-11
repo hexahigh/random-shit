@@ -1,0 +1,29 @@
+{
+  "breaking_bad": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "random_shit:breaking_bad",
+        "stream": false
+      }
+    ]
+  },
+  "snort": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "random_shit:snort",
+        "stream": false
+      }
+    ]
+  },
+  "yoshi-athletic-theme-trap-remix": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "random_shit:yoshi-athletic-theme-trap-remix",
+        "stream": true
+      }
+    ]
+  }
+}

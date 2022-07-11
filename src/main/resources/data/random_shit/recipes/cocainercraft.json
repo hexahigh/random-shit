@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "random_shit:meth"
+  },
+  "result": "random_shit:cocainer"
+}

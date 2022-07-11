@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "random_shit:blocks/methplant2",
+    "particle": "random_shit:blocks/methplant2"
+  }
+}

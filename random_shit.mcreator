@@ -1,0 +1,236 @@
+{
+  "mod_elements": [
+    {
+      "name": "Caves",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caves",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Leavecave",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leavecave",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cavesbiome",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cavesbiome"
+    },
+    {
+      "name": "Breakingbadtheme",
+      "type": "musicdisc",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breakingbadtheme"
+    },
+    {
+      "name": "Snortc",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snortc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cocainer",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocainer"
+    },
+    {
+      "name": "Meth",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meth"
+    },
+    {
+      "name": "Methplant",
+      "type": "plant",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "methplant"
+    },
+    {
+      "name": "Methcraft",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "methcraft"
+    },
+    {
+      "name": "Cocainercraft",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocainercraft"
+    },
+    {
+      "name": "Yoshi",
+      "type": "musicdisc",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yoshi"
+    },
+    {
+      "name": "Shit",
+      "type": "tab",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit"
+    },
+    {
+      "name": "Dildo",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dildo"
+    },
+    {
+      "name": "Devarmor",
+      "type": "armor",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "devarmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "YEET",
+      "type": "enchantment",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yeet"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "breaking_bad",
+      "files": [
+        "breaking_bad"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "snort",
+      "files": [
+        "snort"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "yoshi-athletic-theme-trap-remix",
+      "files": [
+        "yoshi-athletic-theme-trap-remix"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.random_shit.meth": "Meth",
+      "block.random_shit.methplant": "Meth plant",
+      "block.caves_only.methplant": "Meth plant",
+      "item.caves_only.yoshi.desc": "Yoshi :)",
+      "item.caves_only.yoshi": "Yoshi Athletic theme",
+      "item.random_shit.dildo": "Dildo",
+      "item.random_shit.devarmor_boots": "Dev Boots",
+      "itemGroup.tabshit": "Shit",
+      "item.caves_only.caves": "Caves Portal Igniter",
+      "enchantment.random_shit.yeet": "YEET",
+      "item.random_shit.cocainer": "Cocainer",
+      "item.random_shit.devarmor_chestplate": "Dev Body",
+      "item.caves_only.breakingbadtheme.desc": "Meth",
+      "item.random_shit.breakingbadtheme": "Breaking bad theme",
+      "subtitles.breaking_bad": "",
+      "item.random_shit.yoshi": "Yoshi Athletic theme",
+      "item.random_shit.yoshi.desc": "Yoshi :)",
+      "subtitles.snort": "",
+      "item.random_shit.devarmor_leggings": "Dev Leggings",
+      "item.caves_only.cocainer": "Cocainer",
+      "biome.random_shit.cavesbiome": "Cavesbiome",
+      "item.caves_only.meth": "Meth",
+      "item.caves_only.dildo": "Dildo",
+      "item.random_shit.caves": "Caves Portal Igniter",
+      "biome.caves_only.cavesbiome": "Cavesbiome",
+      "item.random_shit.devarmor_helmet": "Dev Helmet",
+      "item.caves_only.breakingbadtheme": "Breaking bad theme",
+      "item.random_shit.breakingbadtheme.desc": "Meth",
+      "subtitles.yoshi-athletic-theme-trap-remix": ""
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "random_shit",
+    "modName": "random shit",
+    "version": "1.0.0",
+    "author": "Simon, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.random",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

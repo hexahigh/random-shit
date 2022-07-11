@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "yoshi",
+    "name": "Yoshi Athletic theme",
+    "description": "Yoshi :)",
+    "creativeTab": {
+      "value": "CUSTOM:Shit"
+    },
+    "music": {
+      "value": "CUSTOM:yoshi-athletic-theme-trap-remix"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

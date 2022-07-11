@@ -1,0 +1,45 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Cavesbiome"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "fluidBlock": {
+      "value": "Blocks.AIR"
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": true,
+    "onPlayerLeavesDimension": {
+      "name": "Leavecave"
+    },
+    "portalFrame": {
+      "value": "Blocks.AMETHYST_BLOCK"
+    },
+    "portalParticles": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "CUSTOM:breaking_bad"
+    },
+    "igniterName": "Caves Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "walter_white_s5b",
+    "portalTexture": "shutterstock_314476217-1",
+    "enablePortal": true
+  }
+}

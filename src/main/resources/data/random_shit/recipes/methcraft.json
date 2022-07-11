@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "random_shit:methplant"
+    },
+    "1": {
+      "item": "random_shit:methplant"
+    },
+    "2": {
+      "item": "random_shit:methplant"
+    },
+    "3": {
+      "item": "random_shit:methplant"
+    },
+    "4": {
+      "item": "random_shit:methplant"
+    },
+    "5": {
+      "item": "random_shit:methplant"
+    },
+    "6": {
+      "item": "random_shit:methplant"
+    },
+    "7": {
+      "item": "random_shit:methplant"
+    },
+    "8": {
+      "item": "random_shit:methplant"
+    }
+  },
+  "result": {
+    "item": "random_shit:meth",
+    "count": 4
+  }
+}
