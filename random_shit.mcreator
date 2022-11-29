@@ -148,6 +148,25 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "yeet"
+    },
+    {
+      "name": "Cheeseeffect",
+      "type": "potioneffect",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheeseeffect"
+    },
+    {
+      "name": "Cheesesmell",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesesmell",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -180,6 +199,7 @@
   "language_map": {
     "en_us": {
       "item.random_shit.meth": "Meth",
+      "effect.random_shit.cheeseeffect": "Cheese",
       "block.random_shit.methplant": "Meth plant",
       "block.caves_only.methplant": "Meth plant",
       "item.caves_only.yoshi.desc": "Yoshi :)",

@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.random.init.RandomShitModTabs;
 import net.mcreator.random.init.RandomShitModSounds;
+import net.mcreator.random.init.RandomShitModMobEffects;
 import net.mcreator.random.init.RandomShitModItems;
 import net.mcreator.random.init.RandomShitModFeatures;
 import net.mcreator.random.init.RandomShitModEnchantments;
@@ -58,6 +59,8 @@ public class RandomShitMod {
 		RandomShitModItems.REGISTRY.register(bus);
 
 		RandomShitModFeatures.REGISTRY.register(bus);
+
+		RandomShitModMobEffects.REGISTRY.register(bus);
 
 		RandomShitModEnchantments.REGISTRY.register(bus);
 
