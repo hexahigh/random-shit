@@ -5,9 +5,12 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.EquipmentSlot;
 
 import net.mcreator.random.init.RandomShitModItems;
+
+import java.util.List;
 
 public class YEETEnchantment extends Enchantment {
 	public YEETEnchantment(EquipmentSlot... slots) {
@@ -21,11 +24,8 @@ public class YEETEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		if (stack.getItem() == Items.STICK)
-			return true;
-		if (stack.getItem() == RandomShitModItems.DILDO.get())
-			return true;
-		return false;
+		Item item = stack.getItem();
+		return List.of(Items.STICK, RandomShitModItems.DILDO.get()).contains(item);
 	}
 
 	@Override

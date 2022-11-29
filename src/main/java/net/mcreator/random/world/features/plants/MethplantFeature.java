@@ -17,7 +17,6 @@ import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.util.valueproviders.BiasedToBottomInt;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -36,23 +35,16 @@ public class MethplantFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new MethplantFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("random_shit:methplant", FEATURE,
-				FeatureUtils.simpleRandomPatchConfiguration(64,
-						PlacementUtils.filtered(Feature.BLOCK_COLUMN,
-								BlockColumnConfiguration.simple(BiasedToBottomInt.of(2, 4),
-										BlockStateProvider.simple(RandomShitModBlocks.METHPLANT.get().defaultBlockState())),
-								BlockPredicate.allOf(BlockPredicate.ONLY_IN_AIR_PREDICATE,
-										BlockPredicate.wouldSurvive(RandomShitModBlocks.METHPLANT.get().defaultBlockState(), BlockPos.ZERO)))));
+		CONFIGURED_FEATURE = FeatureUtils.register("random_shit:methplant", FEATURE, FeatureUtils.simpleRandomPatchConfiguration(64,
+				PlacementUtils.filtered(Feature.BLOCK_COLUMN,
+						BlockColumnConfiguration.simple(BiasedToBottomInt.of(2, 4), BlockStateProvider.simple(RandomShitModBlocks.METHPLANT.get())),
+						BlockPredicate.allOf(BlockPredicate.ONLY_IN_AIR_PREDICATE,
+								BlockPredicate.wouldSurvive(RandomShitModBlocks.METHPLANT.get().defaultBlockState(), BlockPos.ZERO)))));
 		PLACED_FEATURE = PlacementUtils.register("random_shit:methplant", CONFIGURED_FEATURE, List.of(CountPlacement.of(5),
 				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public MethplantFeature() {

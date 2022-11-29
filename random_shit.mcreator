@@ -153,6 +153,14 @@
   "variable_elements": [],
   "sound_elements": [
     {
+      "name": "yoshi-athletic-theme-trap-remix",
+      "files": [
+        "yoshi-athletic-theme-trap-remix"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
       "name": "breaking_bad",
       "files": [
         "breaking_bad"
@@ -166,14 +174,6 @@
         "snort"
       ],
       "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "yoshi-athletic-theme-trap-remix",
-      "files": [
-        "yoshi-athletic-theme-trap-remix"
-      ],
-      "category": "music",
       "subtitle": ""
     }
   ],
@@ -218,7 +218,7 @@
     "modid": "random_shit",
     "modName": "random shit",
     "version": "1.0.0",
-    "author": "Simon, MCreator",
+    "author": "Boof",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
@@ -227,10 +227,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Made by Boof V2#4806",
     "modElementsPackage": "net.mcreator.random",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200120510
+  "mcreatorVersion": 202200348217
 }

@@ -3,8 +3,6 @@ package net.mcreator.random.block;
 
 import net.minecraftforge.common.PlantType;
 import net.minecraftforge.common.ForgeHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -15,21 +13,17 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import net.mcreator.random.init.RandomShitModBlocks;
-
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 public class MethplantBlock extends SugarCaneBlock {
 	public MethplantBlock() {
-		super(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.GRASS).instabreak());
+		super(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().noCollission());
 	}
 
 	@Override
@@ -52,7 +46,7 @@ public class MethplantBlock extends SugarCaneBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(this));
 	}
 
 	@Override
@@ -61,7 +55,7 @@ public class MethplantBlock extends SugarCaneBlock {
 	}
 
 	@Override
-	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos blockpos, Random random) {
+	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos blockpos, RandomSource random) {
 		if (world.isEmptyBlock(blockpos.above())) {
 			int i = 1;
 			for (; world.getBlockState(blockpos.below(i)).is(this); ++i);
@@ -76,10 +70,5 @@ public class MethplantBlock extends SugarCaneBlock {
 				}
 			}
 		}
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(RandomShitModBlocks.METHPLANT.get(), renderType -> renderType == RenderType.cutout());
 	}
 }
