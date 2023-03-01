@@ -25,5 +25,14 @@
         "stream": false
       }
     ]
+  },
+  "dream_cheese": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "random_shit:y2mate.com-sometimes-i-dream-about-cheese-sound-effect-clean",
+        "stream": false
+      }
+    ]
   }
 }

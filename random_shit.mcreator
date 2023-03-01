@@ -165,7 +165,58 @@
       "locked_code": false,
       "registry_name": "cheesesmell",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cheesearmor",
+      "type": "armor",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesearmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Cheesearmorproc",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesearmorproc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cheesearmorputon",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesearmorputon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     }
   ],
@@ -194,16 +245,28 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "dream_cheese",
+      "files": [
+        "y2mate.com-sometimes-i-dream-about-cheese-sound-effect-clean"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
+      "subtitles.dream_cheese": "",
       "item.random_shit.meth": "Meth",
+      "item.random_shit.cheesearmor_chestplate": "Cheese Body",
       "effect.random_shit.cheeseeffect": "Cheese",
       "block.random_shit.methplant": "Meth plant",
       "block.caves_only.methplant": "Meth plant",
       "item.caves_only.yoshi.desc": "Yoshi :)",
+      "item.random_shit.cheesearmor_leggings": "Cheese Leggings",
       "item.caves_only.yoshi": "Yoshi Athletic theme",
+      "item.random_shit.cheesearmor_helmet": "Cheese Helmet",
       "item.random_shit.dildo": "Dildo",
       "item.random_shit.devarmor_boots": "Dev Boots",
       "itemGroup.tabshit": "Shit",
@@ -213,6 +276,7 @@
       "item.random_shit.devarmor_chestplate": "Dev Body",
       "item.caves_only.breakingbadtheme.desc": "Meth",
       "item.random_shit.breakingbadtheme": "Breaking bad theme",
+      "item.random_shit.cheesearmor_boots": "Cheese Boots",
       "subtitles.breaking_bad": "",
       "item.random_shit.yoshi": "Yoshi Athletic theme",
       "item.random_shit.yoshi.desc": "Yoshi :)",

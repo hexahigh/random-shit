@@ -21,4 +21,6 @@ public class RandomShitModSounds {
 			() -> new SoundEvent(new ResourceLocation("random_shit", "breaking_bad")));
 	public static final RegistryObject<SoundEvent> SNORT = REGISTRY.register("snort",
 			() -> new SoundEvent(new ResourceLocation("random_shit", "snort")));
+	public static final RegistryObject<SoundEvent> DREAM_CHEESE = REGISTRY.register("dream_cheese",
+			() -> new SoundEvent(new ResourceLocation("random_shit", "dream_cheese")));
 }
